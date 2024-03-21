@@ -1,0 +1,7 @@
+docker build --platform linux/amd64 -t pod-image2:test . 
+docker run --platform linux/amd64 -p 9000:8080 pod-image2:test   #to run locally
+docker tag pod-image2:test 722336357156.dkr.ecr.us-east-2.amazonaws.com/pod-repo:latest
+docker push 722336357156.dkr.ecr.us-east-2.amazonaws.com/pod-repo:latest
+
+
+https://docs.aws.amazon.com/lambda/latest/dg/python-image.html#python-image-instructions
