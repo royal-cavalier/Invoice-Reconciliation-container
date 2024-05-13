@@ -73,7 +73,7 @@ def parse_invoice(path):
             "text": """
   [{"Invoice #": ""  }]
   Given this JSON object, read this image and populate the items. DO NOT RETURN ANY INFORMATION OUTSIDE OF JSON FORMAT, WHATSOEVER, UNDER ANY CIRCUMSTANCES!
-  The invoice # be numbers or decimals only. Return absolutely nothing except the Invoice #, WHATSOEVER, UNDER ANY CIRCUMSTANCES!
+  The invoice # be numbers or decimals only. Return absolutely nothing except the Invoice #, WHATSOEVER, UNDER ANY CIRCUMSTANCES! The invoice should be contain exactly 7 digits, no more and no less.
   """
           },
           {
